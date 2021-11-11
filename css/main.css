@@ -1,0 +1,577 @@
+/*
+    Project: Auction System
+*/
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+textarea
+{
+    resize: none;
+}
+
+
+a:focus
+{
+    outline: 5px auto #54cfa6;
+}
+
+
+h5
+{
+    font-size: 16px;
+}
+
+
+hr#categories
+{
+    border-top: 1px dotted #e7e7e7;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+h5#super-category
+{
+    color: #5d5d5d;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.navbar
+{
+    margin-bottom: 0;
+}
+
+
+.navbar-brand
+{
+    height: auto;
+}
+
+
+.navbar-brand img
+{
+    height: 43px;
+    width: inherit;
+}
+
+
+.navbar-right
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.navbar-left
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.navbar-top
+{
+    background-color: #253b52;
+    border-bottom: solid 1px #999;
+}
+
+
+.navbar-top-links .dropdown-menu li a,
+.dropdown-menu > li > a
+{
+    padding: 10px 20px;
+
+}
+
+
+.footer
+{
+    width: 100%;
+    margin-top: 90px;
+    bottom: 0;
+}
+
+
+.form-control,
+.bootstrap-select > .btn
+{
+    height:48px;
+}
+
+
+.form-control:focus
+{
+    border-color: #54cfa6;
+}
+
+
+.bootstrap-select .btn:focus
+{
+    outline: none !important;
+}
+
+
+.input-group-btn > .btn
+{
+    height: 48px;
+}
+
+
+.image-preview-input
+{
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    padding: 12px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+
+.image-preview-input input[type=file]
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    height:inherit;
+}
+
+
+.image-preview-input-title
+{
+    margin-left:2px;
+}
+
+
+.page-header
+{
+    padding-bottom: 20px;
+}
+
+
+.auction-navigation
+{
+    padding-top: 3px;
+}
+
+
+.panel-heading,
+.panel-footer
+{
+    padding: 2px 15px;
+}
+
+
+.panel-body h4,
+h4#live-auction
+{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+.panel-body hr
+{
+    margin-top: 5px;
+}
+
+
+.p-title
+{
+    color: #7a7f82;
+}
+
+
+.current-bid
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+}
+
+
+.no-bids
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+}
+
+
+.no-bids h4
+{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+
+.a-list
+{
+    margin-bottom: 5px;
+}
+
+
+.a-subcategory
+{
+    padding-left: 20px;
+    margin-bottom: 1px;
+}
+
+
+.panel
+{
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+
+.live-auction-to-buyer
+{
+    border-bottom: solid 1px #e7e7e7;
+    padding-left: 0;
+    margin-left: 15px;
+}
+
+
+.auction-img
+{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+
+.auction-info
+{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+
+.well
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.bid-price
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+.dropdown-menu>li>a
+{
+    line-height: 2.5;
+}
+
+
+.dropdown-alerts >li>a
+{
+    line-height: inherit;
+}
+
+
+#bid-box,
+.move-in
+{
+    padding-left: 30px;
+}
+
+
+.bid-price small
+{
+    font-size: 60%;
+}
+
+
+.dataTables_filter input
+{
+    height: 30px
+}
+
+
+.modal-header
+{
+    font-size: 18px;
+    color: #337ab7;
+}
+
+
+#current-category
+{
+    color: #54bc91;
+}
+
+
+#search-main
+{
+    padding-top: 10px;
+}
+
+
+#search-header
+{
+    padding-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: solid 1px #e7e7e7;
+    font-size: 15px;
+}
+
+
+#search-total-results
+{
+    padding-top: 10px;
+}
+
+
+#search-header .dropdown-menu
+{
+    left: auto;
+    right: 0;
+}
+
+
+#search-sort
+{
+    padding-right: 10px;
+}
+
+
+#scrollable-menu
+{
+    height: auto;
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+
+#go-back-navigation
+{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+#go-back-navigation a
+{
+    margin-right: 5px;
+}
+
+
+#bid-box
+{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #e7e7e7;
+    border: solid 1px #d7d7d7;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+
+#seller-info
+{
+    margin-top: 0;
+}
+
+
+#seller-info .panel-body
+{
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+
+#seller-info h4
+{
+    margin-bottom: 0;
+}
+
+
+#live-auction
+{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+
+
+/*-------------------------------------
+ * Feedback CSS
+ *-------------------------------------*/
+
+.btn-grey
+{
+    background-color:#D8D8D8;
+    color:#FFF;
+}
+
+
+.rating-block
+{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px 15px 20px 15px;
+    border-radius:3px;
+}
+
+
+.bold
+{
+    font-weight:700;
+}
+
+
+.padding-bottom-7
+{
+    padding-bottom:7px;
+}
+
+
+.review-block
+{
+    margin-top: 15px;
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px;
+    border-radius:3px;
+}
+
+
+.feedbacks-header
+{
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.review-block-name
+{
+    font-size:12px;
+    margin:10px 0;
+}
+
+
+.review-block-date
+{
+    font-size:12px;
+}
+
+
+.review-block-rate
+{
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+
+.review-block-title
+{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+
+.review-block-description
+{
+    font-size:13px;
+}
+
+
+.no-padding-left
+{
+    padding-left: 0;
+}
+
+
+.animated
+{
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+
+.stars
+{
+    margin: 0 0;
+    font-size: 24px;
+    color: #d17581;
+}
+
+
+
+/*-------------------------------------
+ * Recommendation CSS
+ *-------------------------------------*/
+
+
+.recommendation-box .panel-body
+{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+
+ul.thumbnails,
+.thumbnail
+{
+    margin-bottom: 0;
+}
+
+
+li
+{
+    list-style-type:none;
+}
+
+
+.thumbnails li> .fff .caption
+{
+    background:#fff !important;
+    padding: 10px;
+}
+
+
+.carousel-control.left, .carousel-control.right
+{
+    background-image: none;
+}
+
+
+.carousel-control
+{
+    width: 5%;
+}
+
+
+.recommendations
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}

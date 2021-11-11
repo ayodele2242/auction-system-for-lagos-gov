@@ -1,0 +1,151 @@
+.central {
+  width: 450px;
+  margin-left: auto ;
+  margin-right: auto ;
+  background:#fff;
+  padding:4px;
+  overflow:hidden;
+}
+
+
+@media print {
+    html, body {
+        height: 100%;
+    }
+
+    /* on modal open bootstrap adds class "modal-open" to body, so you can handle that case and hide body */
+     body *, body.modal-open {
+        visibility: hidden;
+    }
+
+    body.modal-open .modal .modal-header,
+    body.modal-open .modal .modal-body {
+        visibility: visible; /* make visible modal body and header */
+    }
+  #section-to-print, #section-to-print * {
+    visibility: visible;
+  }
+  #section-to-print {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.text-danger strong {
+    color: #9f181c;
+}
+.receipt-main {
+    background: #ffffff none repeat scroll 0 0;
+    border-bottom: 12px solid #333333;
+    border-top: 12px solid #9f181c;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 30px !important;
+    position: relative;
+    box-shadow: 0 1px 21px #acacac;
+    color: #333333;
+    font-family: open sans;
+}
+.receipt-main p {
+    color: #333333;
+    font-family: open sans;
+    line-height: 1.42857;
+}
+.receipt-footer h1 {
+    font-size: 15px;
+    font-weight: 400 !important;
+    margin: 0 !important;
+}
+.receipt-main::after {
+    background: #414143 none repeat scroll 0 0;
+    content: "";
+    height: 5px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -13px;
+}
+.receipt-main thead {
+    background: #414143 none repeat scroll 0 0;
+}
+.receipt-main thead th {
+    color:#fff;
+}
+.receipt-right h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 7px 0;
+}
+.receipt-right p {
+    font-size: 12px;
+    margin: 0px;
+}
+.receipt-right p i {
+    text-align: center;
+    width: 18px;
+}
+.receipt-main td {
+    padding: 9px 20px !important;
+}
+.receipt-main th {
+    padding: 13px 20px !important;
+}
+.receipt-main td {
+    font-size: 13px;
+    font-weight: initial !important;
+}
+.receipt-main td p:last-child {
+    margin: 0;
+    padding: 0;
+}	
+.receipt-main td h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+}
+.receipt-header-mid .receipt-left h1 {
+    font-weight: 100;
+    margin: 34px 0 0;
+    text-align: right;
+    text-transform: uppercase;
+}
+.receipt-header-mid {
+    margin: 24px 0;
+    overflow: hidden;
+}
+
+
+
+@media only print, print {
+  body.non-print .container-fluid,
+  body.non-print .right_col,
+  body.non-print .table_view,
+  body.non-print .breadcrumb,
+  body.non-print .row,
+  .nav,.sidebar,
+  body.non-print .content,
+  body.non-print #example,
+  body.non-print .product-jumbo-strech .bottom-wrapper,
+  body.non-print header,
+  body.non-print footer,
+  .modal-backdrop.toPrint {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .modal.toPrint {
+    position: relative;
+    overflow: hidden;
+    visibility:visible;
+    width: 100%;
+    font-size: 80%;
+    background: #fff;
+  }
+  .modal.toPrint .nav .li {
+    visibility: hidden;
+  }
+  .modal.toPrint .nav .li.active {
+    visibility: visible;
+  }
+}	

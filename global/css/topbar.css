@@ -1,0 +1,23 @@
+body {
+	padding-top: 50px;
+}
+
+.navbar-header {
+	user-select: none;
+}
+
+#brand-logo {
+	height: 100%;
+	width: auto;
+	display: inline;
+}
+
+#brand-name {
+	padding: 0px 10px 0px 10px;
+}
+
+#avatar {
+	width: auto;
+	height: 20px;
+	border-radius: 20%;
+}

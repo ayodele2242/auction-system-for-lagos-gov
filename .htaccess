@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+	
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^([^\.]+)$ $1.php [NC,L]
+	
+	DirectoryIndex main.php
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    #RewriteRule ^ main.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    Options -Indexes
+
+    <filesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh|includes)$">
+ Order Allow,Deny
+ Deny from all
+</filesMatch>
+</IfModule>
